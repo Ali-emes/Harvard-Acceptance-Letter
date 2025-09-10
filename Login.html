@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+ </head>
+ <body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" style="display: none;">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <img src="Harvard_logo.jpg" alt="Harvard Logo" class="logo">
+        <nav class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Admissions</a>
+            <a href="#">Financial Aid</a>
+            <a href="#">Academics</a>
+            <a href="#">Life at Harvard</a>
+        </nav>
+    </header>
+
+     <!-- Login Form -->
+     <div class="login-container">
+        <div class="header">
+            <img src="Harvard_logo.jpg" alt="Harvard Logo" class="logo">
+            <h1>Harvard College</h1>
+            <p>Admissions & Financial Aid</p>
+        </div>
+        <h2>Check Your Acceptance Status</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <a href="http://127.0.0.1:5500/College%20Acceptance%20Website/Acceptance.html" 
+                onclick="delayedLink(event, 'http://127.0.0.1:5500/College%20Acceptance%20Website/Acceptance.html')" 
+                class="login-btn">Login</a>
+                <div id="loading" style="display:none;">Loading...</div>
+        <div class="links">
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </form>
+    </div>
+
+
+    <div id="loading-screen" style="display: none;">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Copyright © 2025 The President & Fellows of Harvard College</p>
+            <nav class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Copyright Disclosure</a>
+                <a href="#">Accessibility</a>
+            </nav>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
+    </footer>
+
+<script>
+function delayedLink(event, url) {
+    event.preventDefault();
+    document.getElementById('loading-screen').style.display = 'flex'; // Show loading screen
+    setTimeout(() => {
+        window.location.href = url; // Redirect after 2 seconds
+    }, 4000);
+}
+</script>
+ </body>
+</html>

@@ -1,0 +1,118 @@
+/* I dont think it can read this so I will try to 
+explain stuff of what i am trying to do here.
+
+So, the idea is to make a joke, fun website of a
+college acceptance website.*/
+
+body {
+    margin: 0;
+    padding: 0%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Garamond', 'Times New Roman', serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+}
+
+.date {
+  position: absolute;
+  top:30px; /* adjust as needed */
+  left: 28%;
+  transform: translateX(-50%); /* perfectly center it horizontally */
+  padding: 0px 20px; /* optional, if you want it clean */
+  font-weight: bold;
+  font-size: 25}
+
+h1 {
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left-center;
+}
+.container {
+  border-top: 5px solid red; 
+  padding-top: 10px;
+  margin-top: 80px;
+  width: 90%;
+  max-width: 830px;
+  background-color: white;
+  font-size: 170px;
+  
+}
+
+.container p {
+    font-size: 1.75rem;
+    color: rgb(20, 20, 20);
+    margin-bottom: 20px;
+    margin-left: 20px;  
+    text-align: left-center;
+}
+#acceptance-letter {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  #confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+.image {
+  position: relative;
+  top: 0px;
+  left: 45%; 
+}
+
+.message {
+    position: relative;
+    top: 0%;
+    left: auto;
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgb(20, 20, 20);
+    padding: 20px;
+}
+
+.footer {
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color:#5c000ed8;
+    font-size: 1rem;
+    
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* allow clicking "through" the particles */
+  z-index: 999;
+}
